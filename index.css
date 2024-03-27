@@ -1,82 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 :root {
-    --bg-color: #3c4554;
-    --fg-color: #ffffff;
+	--bg-color: #3c4554;
+	--fg-color: #ffffff;
 }
 
 * {
-    font-family: 'Rubik', sans-serif;
-    user-select: none;
+	font-family: "Rubik", sans-serif;
+	user-select: none;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100% !important;
-    font-family: 'Rubik', sans-serif;
-    color: var(--fg-color);
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100% !important;
+	font-family: "Rubik", sans-serif;
+	color: var(--fg-color);
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #30343F;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #30343f;
 }
 
 main {
-    width: 25%;
-    height: 90%;
-    background-color: var(--bg-color);
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid var(--fg-color);
+	width: 400px;
+	height: 570px;
+	background-color: var(--bg-color);
+	border-radius: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid var(--fg-color);
 }
 
 #text-area {
-    appearance: none;
-    max-width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-    padding: 5px;
-    border: none;
-    outline: none;
-    font-size: 48px;
-    text-align: right;
-    background-color: var(--bg-color);
-    color: var(--fg-color);
-    overflow-x: auto;
-    resize: none;
-    overflow-y: hidden;
+	appearance: none;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 20px 5px;
+	border: none;
+	outline: none;
+	font-size: 48px;
+	text-align: right;
+	background-color: var(--bg-color);
+	color: var(--fg-color);
+	overflow-x: auto;
+	resize: none;
+	overflow-y: hidden;
 }
 
 section#button-area {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 0px 15px;
-    gap: 5%;
-    flex-flow: wrap;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 0px 15px;
+	gap: 5%;
+	flex-flow: wrap;
 }
 
 div[role="button"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 60px;
-    min-height: 60px;
-    vertical-align: middle;
-    margin-top: 25px;
-    font-size: larger;
-    border-radius: 5px;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 8px 0px;
-    cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 60px;
+	min-height: 60px;
+	vertical-align: middle;
+	margin-top: 25px;
+	font-size: larger;
+	border-radius: 5px;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 2px 8px 0px;
+	cursor: pointer;
 }
 
 div[role="button"]:last-child {
-    min-width: calc(115px + 5%); /* Padding + gap + width */
+	min-width: calc(115px + 5%); /* Padding + gap + width */
 }

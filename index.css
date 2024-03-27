@@ -55,6 +55,24 @@ main {
 	overflow-y: hidden;
 }
 
+#text-area::-webkit-scrollbar {
+	height: 8px;
+}
+
+#text-area::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0);
+}
+
+#text-area::-webkit-scrollbar-thumb {
+	background: #58657e;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#text-area::-webkit-scrollbar-thumb:hover {
+	background: #63718d;
+}
+
 section#button-area {
 	display: flex;
 	justify-content: space-around;

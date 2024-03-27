@@ -9,10 +9,10 @@ const handleButtonClick = (event) => {
         doneCalculation = false;
         textArea.value = "";
     }
-    
+
     if (functions.includes(value)) {
-        
-        switch(value) {
+
+        switch (value) {
             case "clear": {
                 clearTextAra();
                 break;
@@ -52,17 +52,19 @@ const handleButtonClick = (event) => {
     } else {
         textArea.value += event.innerText;
     }
+    
+    textArea.scrollLeft = textArea.scrollWidth;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     clearTextAra();
 })
 
-function clearTextAra () {
+function clearTextAra() {
     document.getElementById("text-area").value = "";
 }
 
-function calculateMath () {
+function calculateMath() {
     const textArea = document.getElementById("text-area");
 
     try {
